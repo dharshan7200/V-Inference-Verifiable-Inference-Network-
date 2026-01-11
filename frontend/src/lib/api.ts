@@ -277,6 +277,9 @@ export async function getListings(
     return res.json();
 }
 
+// Alias for backward compatibility
+export const getMarketplaceListings = getListings;
+
 export async function getListing(
     listingId: string
 ): Promise<APIResponse<MarketplaceListing>> {
